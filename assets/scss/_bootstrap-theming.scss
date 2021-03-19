@@ -1,0 +1,49 @@
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: $color-primary-dark;
+}
+
+.navbar-inverse {
+    background-color: darken($color-dark, 4%);
+}
+
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: $color-primary-light;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    @include sm-min {
+        border-radius: 4px;
+    }
+
+    @include sm {
+        text-align: center;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: $color-primary;
+}
+.navbar-left li {
+    @include sm-min {
+        margin: 5px 5px 5px 0;
+    }
+}
+
+.navbar-right li {
+    @include sm-min {
+        margin: 5px 0 5px 5px;
+    }
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right: 0;
+}

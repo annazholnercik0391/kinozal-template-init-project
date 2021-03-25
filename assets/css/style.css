@@ -74,6 +74,18 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h1 {
+  font-family: "PT Serif", serif;
+}
+
+h1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  margin: 40.8px 0 0 15px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
 .header-logo {
   background-color: #232323;
   background-image: url(../img/header-bg.jpg);
@@ -104,20 +116,59 @@ a:hover, a:focus {
   margin-bottom: 60px;
 }
 
-.new-films-row {
+.new-films-row,
+.top-week-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
   margin-bottom: -15px;
 }
 
-.new-films-item {
+.new-films-item,
+.top-week-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
-.new-films-item__thumbnail {
+.new-films-item__thumbnail,
+.top-week-item__thumbnail {
   margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.new-films-item__image,
+.top-week-item__image {
+  width: 100%;
+}
+
+.new-films-item__title,
+.top-week-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.new-films-item__caption,
+.top-week-item__caption {
+  text-align: center;
+}
+
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  background-color: #df8a13;
+  border: #df8a13;
+}
+
+.new-films-item:hover h3,
+.top-week-item:hover h3 {
+  color: #ffffff;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -259,6 +310,10 @@ a:hover, a:focus {
 }
 
 @media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+    margin: -7.5px 0 45px;
+  }
   .header-logo__title {
     margin-right: -0.2777em;
     font-size: 3.5rem;

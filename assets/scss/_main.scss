@@ -34,12 +34,12 @@
     }
 
     &__title {
+        margin: 0;
+
         @include text-shortener;
 
         font-size: 1rem;
         font-weight: bold;
-
-        margin: 0;
     }
 
     &__caption {
@@ -49,11 +49,52 @@
     &:hover {
         .thumbnail {
             background-color: $color-accent;
-            border: $color-accent;
+            border-color: $color-accent;
         }
 
         h3 {
             color: $color-light;
+        }
+    }
+}
+.films-news-item {
+    &__article {
+        text-align: justify;
+    }
+
+    & h3 > a {
+        transition: color 0.25s;
+    }
+
+    & .thumbnail {
+        margin-bottom: 0;
+    }
+
+    &__thumbnail {
+        transition: background-color 0.25s;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__btn {
+        float: right;
+        margin-bottom: 30px;
+        transition: background-color 0.25s;
+    }
+
+    &:hover {
+        .btn-warning {
+            background-color: $color-accent;
+        }
+
+        .thumbnail {
+            background-color: $color-accent;
+        }
+
+        & h3 > a {
+            color: $color-accent;
         }
     }
 }

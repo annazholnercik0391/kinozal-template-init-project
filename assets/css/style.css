@@ -61,6 +61,12 @@
   transition: background-color 0.25s;
 }
 
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -250,6 +256,31 @@ h2::after {
   color: #df8a13;
 }
 
+.film-info {
+  font-size: 1.2rem;
+}
+
+.film-info__about {
+  white-space: nowrap;
+}
+
+.film-info__about:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__badge {
+  font-size: 0.96rem;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-comments-form__btn {
+  float: right;
+}
+
 .left-sidebar .panel:last-of-type {
   margin: 0;
 }
@@ -352,6 +383,15 @@ h2::after {
   margin-bottom: 0;
 }
 
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .top-films__item {
   background-color: transparent;
   margin-right: -1px;
@@ -377,15 +417,6 @@ h2::after {
 
 .top-films__item:hover .badge, .top-films__item:focus .badge {
   background-color: #232323;
-}
-
-.top-films__badge {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .footer {

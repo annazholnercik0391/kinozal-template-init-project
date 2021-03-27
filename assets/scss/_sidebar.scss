@@ -101,11 +101,18 @@
         margin-bottom: 0;
     }
 
+    &__badge {
+        position: absolute;
+        top: 50%;
+        right: $gap;
+        transform: translateY(-50%);
+    }
+
     &__item {
         background-color: transparent;
         margin-right: -1px;
         margin-left: -1px;
-        
+
         color: $color-primary !important;
 
         &:first-child {
@@ -128,12 +135,5 @@
                 background-color: $color-dark;
             }
         }
-    }
-
-    &__badge {
-        position: absolute;
-        top: 50%;
-        right: $gap;
-        transform: translateY(-50%);
     }
 }

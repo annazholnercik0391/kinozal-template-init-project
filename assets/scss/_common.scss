@@ -22,6 +22,11 @@ h1 {
         font-size: 3rem;
         margin: -7.5px 0 45px;
     }
+
+    @include xs {
+        font-size: 2rem;
+        margin: 0 0 30px;
+    }
 }
 
 h1::after {
@@ -41,6 +46,11 @@ h2 {
     @include xs-min {
         font-size: 2.5rem;
         margin: 60px 0 45px 45px;
+    }
+
+    @include xs {
+        font-size: 1.75rem;
+        margin: 45px 0 30px 45px;
     }
 
     &::before {

@@ -491,6 +491,14 @@ h2::after {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 30px;
+  }
+  h2 {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
+  }
   h3 {
     font-size: 1.25rem;
   }
